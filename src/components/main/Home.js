@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Grid, Image } from "semantic-ui-react";
+import { Grid, Image, Container, Segment } from "semantic-ui-react";
 import InputForm from "../form/InputForm";
+import "./Home.scss";
 
 class Home extends Component {
   render() {
@@ -11,7 +12,9 @@ class Home extends Component {
             <Grid.Column width={8}>
               <InputForm />
             </Grid.Column>
-            <Grid.Column width={8}>test</Grid.Column>
+            <Grid.Column className="background-color" width={8}>
+              test
+            </Grid.Column>
           </Grid.Row>
         </Grid>
       </div>
