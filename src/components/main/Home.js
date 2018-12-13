@@ -1,12 +1,19 @@
 import React, { Component } from "react";
-import { Container, Divider } from "semantic-ui-react";
+import { Grid, Image } from "semantic-ui-react";
+import InputForm from "../form/InputForm";
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <Container textAlign="left">test</Container>
-        <Container textAlign="right">test</Container>
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={8}>
+              <InputForm />
+            </Grid.Column>
+            <Grid.Column width={8}>test</Grid.Column>
+          </Grid.Row>
+        </Grid>
       </div>
     );
   }
