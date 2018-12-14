@@ -36,6 +36,42 @@ class InputForm extends Component {
             />
           </Form.Group>
           <DividerTextGroup name="Address" />
+          <Form.Group widths="equal">
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-houseornumber"
+              label="HOUSE NAME OR #"
+            />
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-street"
+              label="STREET"
+            />
+          </Form.Group>
+          <Form.Group widths="equal">
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-suburb"
+              label="SUBURB"
+            />
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-state"
+              label="STATE"
+            />
+          </Form.Group>
+          <Form.Group widths="equal">
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-postcode"
+              label="POSTCODE"
+            />
+            <Form.Input
+              fluid
+              id="form-subcomponent-shorthand-input-country"
+              label="COUNTRY"
+            />
+          </Form.Group>
           <Button content="Primary" type="submit">
             Upload Avatar
           </Button>
