@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { Button, Checkbox, Form, Container } from "semantic-ui-react";
-import Header from "../common/Header.js";
+import Header from "../common/Header";
+import DividerTextGroup from "../common/DividerTextGroup";
 import "./inputForm.scss";
 
 class InputForm extends Component {
   render() {
     return (
-      <div>
+      <section className="input-field">
         <Header />
+        <DividerTextGroup name="Personal Details" />
         <Form className="inputForm">
           <Form.Group widths="equal">
             <Form.Input
@@ -33,12 +35,13 @@ class InputForm extends Component {
               label="PHONE"
             />
           </Form.Group>
+          <DividerTextGroup name="Address" />
           <Button content="Primary" type="submit">
             Upload Avatar
           </Button>
           <Button content="Create hCard" primary />
         </Form>
-      </div>
+      </section>
     );
   }
 }
