@@ -10,6 +10,7 @@
   color: #fff;
   padding: 24px;
   font-weight: 900;
+  width: max-content;
 }
 
 .text-preview {
@@ -45,4 +46,13 @@
 
 .input-text {
   margin: 15px;
+}
+
+// Image
+
+.photo-image {
+  width: 80px;
+  z-index: 1;
+  margin-left: 197px;
+  margin-bottom: -56px;
 }
