@@ -7,7 +7,7 @@ import CardPreviewTextGroup from "../common/CardPreviewTextGroup";
 class BusinessCard extends Component {
   render() {
     return (
-      <Container>
+      <Container className="business-container">
         <section className="business-card">
           <h4 className="text-preview">HCARD PREVIEW</h4>
           <div className="whole-card">
@@ -19,21 +19,39 @@ class BusinessCard extends Component {
         <section className="business-input">
           <div className="whole-body">
             <Container className="name-input">
+              <br />
               <Grid columns={1} divided>
                 <Grid.Row>
-                  <Grid.Column>
+                  <Grid.Column className="input-text">
                     <h4>NAME</h4>
                     <Divider />
                   </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                  <Grid.Column>
-                    <h4>NAME</h4>
+                  <Grid.Column className="input-text">
+                    <h4>PHONE</h4>
+                    <Divider />
                   </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                  <Grid.Column>
-                    <h4>NAME</h4>
+                  <Grid.Column className="input-text">
+                    <h4>ADDRESS</h4>
+                    <Divider />
+                  </Grid.Column>
+                  <Grid.Column className="input-text">
+                    <Divider />
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+              <Grid reversed="computer tablet" columns="equal">
+                <Grid.Row>
+                  <Grid.Column className="input-text">
+                    <h4>COUNTRY</h4>
+                    <Divider />
+                  </Grid.Column>
+                  <Grid.Column className="input-text">
+                    <h4>POSTCODE</h4>
+                    <Divider />
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
