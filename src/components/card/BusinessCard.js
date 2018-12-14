@@ -10,10 +10,19 @@ class BusinessCard extends Component {
       <Container className="business-container">
         <section className="business-card">
           <h4 className="text-preview">HCARD PREVIEW</h4>
+          <figure className="photo-image">
+            <img src={require("../../img/photo.png")} className="photo-image" />
+          </figure>
           <div className="whole-card">
-            <div className="name">
-              <h2>Arthur Truong</h2>
-            </div>
+            <Grid reversed="computer tablet" columns="equal">
+              <Grid.Row>
+                <Grid.Column className="input-text">
+                  <div className="name">
+                    <h2>Arthur Truong</h2>
+                  </div>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </div>
         </section>
         <section className="business-input">
