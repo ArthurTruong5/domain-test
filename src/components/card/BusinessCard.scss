@@ -14,32 +14,35 @@
 
 .text-preview {
   text-align: right;
-  padding-right: 18px;
+  padding-right: 28px;
   margin: 0px;
   color: #bdc5c8;
 }
 
+// body
+
 .business-card {
-  margin-top: 35%;
+  margin-top: 15%;
 }
 
-.card-form {
+.business-input {
+}
+
+.whole-body {
   width: 94%;
   border: 1px solid #394f63;
   margin-left: 9px;
   background-color: #fff;
-  padding-bottom: 150px;
 }
 
-.card-text {
-  font-size: 13px;
-  margin: 0px;
+.post-count {
+  display: inline-grid;
 }
 
-.card-divider {
-  color: blue;
+.business-container {
+  padding: 10px;
 }
 
-.card-fill {
-  padding: 25px;
+.input-text {
+  margin: 15px;
 }
