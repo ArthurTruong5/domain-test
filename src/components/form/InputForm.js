@@ -45,7 +45,7 @@ class InputForm extends Component {
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
-                    id="giveName"
+                    id="givenName"
                     label="GIVEN NAME"
                     value={this.props.givenName}
                     onChange={this.handleChange}
@@ -68,45 +68,59 @@ class InputForm extends Component {
                   />
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-phone"
+                    id="phone"
                     label="PHONE"
+                    value={this.props.phone}
+                    onChange={this.handleChange}
                   />
                 </Form.Group>
                 <DividerTextGroup name="Address" />
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-houseornumber"
+                    id="houseOrNumber"
                     label="HOUSE NAME OR #"
+                    value={this.props.houseOrNumber}
+                    onChange={this.handleChange}
                   />
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-street"
+                    id="street"
                     label="STREET"
+                    value={this.props.street}
+                    onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-suburb"
+                    id="suburb"
                     label="SUBURB"
+                    value={this.props.suburb}
+                    onChange={this.handleChange}
                   />
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-state"
+                    id="state"
                     label="STATE"
+                    value={this.props.state}
+                    onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Form.Group widths="equal">
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-postcode"
+                    id="postCode"
                     label="POSTCODE"
+                    value={this.props.postCode}
+                    onChange={this.handleChange}
                   />
                   <Form.Input
                     fluid
-                    id="form-subcomponent-shorthand-input-country"
+                    id="country"
                     label="COUNTRY"
+                    value={this.props.country}
+                    onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Button content="Primary" type="submit">
@@ -120,6 +134,14 @@ class InputForm extends Component {
             <BusinessCard
               givenName={this.state.givenName}
               lastName={this.state.lastName}
+              email={this.state.email}
+              phone={this.state.phone}
+              houseOrNumber={this.state.houseOrNumber}
+              street={this.state.street}
+              suburb={this.state.suburb}
+              state={this.state.state}
+              postCode={this.state.postCode}
+              country={this.state.country}
             />
           </Grid.Column>
         </Grid.Row>
